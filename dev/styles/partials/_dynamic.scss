@@ -1,0 +1,35 @@
+.petName {
+	font-size: 40px;
+	font-family: $baseFont;
+	color: $blue;
+}
+
+
+.petAge,
+.petId,
+.petCity,
+.petState,
+.petPhone,
+.petEmail, {
+	font-size: 20px;
+	font-family: $baseFont;
+	color: $blue;
+}
+
+.petImage {
+	width: 70%;
+}
+
+// .petImage
+
+.petGet {
+	font-family: $baseFont;
+	border: 5px solid $blue;
+	padding: 50px;
+	border-radius: 10px;
+	margin: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+

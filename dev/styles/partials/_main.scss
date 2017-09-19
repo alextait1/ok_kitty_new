@@ -1,0 +1,164 @@
+main {
+	border: 5px solid $yellow;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+	margin: 50px;
+}
+
+.backgroundHeading {
+	background-image: url('/../assets/cat_img1.jpg');
+	height:100vh;
+	background-size: cover;
+	position: relative;
+	@include respond-to(medium){
+		background-position-x: 80%;
+	}
+	@include respond-to(small){
+		background-position-x: 70%;
+	}
+}
+
+.heading {
+	position:absolute;
+	top:40%;
+	left:10%;
+	display: flex;
+	flex-direction:column;
+	@include respond-to(medium) {
+	left: 50%;
+	transform: translateX(-50%);
+	}
+}
+
+.logo,
+.logo2 {
+	font-family: $logoFont;
+}
+.logo2 {
+	margin:0;
+	padding:0;
+	font-family: $logoFont;
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size:80px;
+  font-style: italic;
+  color:$yellow;
+	// text-shadow:
+  // -2px -2px 0 $orange,  
+  //   2px -2px 0 $orange,
+  //   -2px 2px 0 $orange,
+  //    2px 2px 0 $orange;
+	}
+
+button.mysteryCat,
+input[type=submit] {
+	border:2px solid $yellow;
+	border-radius: 20px;
+	color:$blue;
+	padding: 10px 20px 10px 20px;
+	font-family: $baseFont;
+	// text-transform: uppercase;
+	background-color: white;
+}
+
+button.mysteryCat:hover,
+input[type=submit]:hover {
+	background-color:$yellow;
+	color:$blue;
+	transition: all 0.3s;
+}
+
+.addressField,
+.genderWrap,
+.breedWrap,
+.ageWrap {
+	display: flex;
+	align-items:center;
+	@include respond-to(medium){
+		padding-top: 30px;
+	}
+	@include respond-to(small){
+		flex-direction:column;
+		align-items: left;
+	}
+}
+
+.addressField {
+	padding-right: 30px;
+}
+
+.addressField input{
+@include respond-to(small){
+		margin-left: 30px;
+	}
+}
+
+#breed {
+	border:none;
+	select {
+		width: 150px;
+		height: 30px;
+		border: 1px solid $grey;
+		border-radius: 5px;
+		padding-top: 10px;
+		font-family: $baseFont;
+		font-size: 16px;
+		line-height: 24px;
+		& :hover {
+			background-color: $grey2;
+		}
+	}
+}
+
+.flexContainer {
+	display: flex;
+	align-items: center;
+	padding: 50px;
+	width:60%;
+	@include respond-to(medium){
+		width:80%;
+		padding: 20px;
+	}
+}
+
+.flexChild,{
+	width:30%;
+}
+.flexContainer__Age {
+	display: flex;
+	align-items: center;
+	padding: 50px;
+	display: flex;
+	width:60%;
+	@include respond-to(medium){
+		flex-direction:column;
+		padding: 20px;
+		width: 80%;
+		align-items: left;
+	}
+}
+
+.findCatWrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	background: $orange;
+	p {
+		font-size: 20px;
+		font-family: $baseFont;
+		text-align: center;
+		margin:0;
+		padding: 20px;
+		color:white;
+	}
+}
+
+.footerFlex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
