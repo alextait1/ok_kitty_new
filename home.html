@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>okkitty</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="dev/styles/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Vollkorn:700i" rel="stylesheet">
+	<link href="dev/styles/orange.css" rel="stylesheet">
+	<link type="image/png" href="assets/kitty_favicon.png" rel="icon">
+</head>
+<body>
+	
+	
+	<header>	
+		<div class="backgroundHeading">
+			<!-- BG image goes here -->
+		</div>
+		<div class="wrapper">
+			<div class="heading" id="heading">
+				<p class="logo2"><span class="logo2__ok">ok</span>kitty</p>
+				<a href="#form"><button class="mysteryCat">Mystery Dream Cat</button></a>
+			</div>
+		</div>	
+	</header>
+
+	<main>
+		<!-- form -->
+		<form id="form">
+
+		<!-- location -->
+			<div class="address">
+				<div class="wrapper">
+					<div class="addressField">
+						<label for=""><h2>Enter Your Postal Code/Zip(required)</h2></label>
+						<input type="text" class="location" name="location" required>
+					</div>
+				</div>
+			</div>
+
+			<!-- gender -->
+		<div class="gender">		
+			<div class="wrapper">
+			<div class="genderWrap">
+				<h2>Gender</h2>
+					<div id="gender" class="flexContainer">
+						<div class="flexChild">
+							<label for="male">Male</label>
+							<input type="radio" name="gender" value="M" checked="checked" class="iCheck">
+						</div>
+						<div class="flexChild">
+							<label for="female">Female</label>
+							<input type="radio" name="gender" value="F" class="iCheck">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<!-- breed -->
+			<div class="breed">
+				<div class="wrapper">
+					<div class="breedWrap">
+						<h2>Breed</h2>
+						<fieldset id="breed">
+							<select name="breed">
+								<option>Select Breed</option>
+								<option value="Tabby" selected="selected">Tabby</option>
+								<option value="Siamese" >Siamese</option>
+								<option value="Burmese" >Burmese</option>
+								<option value="Ragdoll" >Ragdoll</option>
+								<option value="Sphynx" >Sphynx</option>
+								<option value="Bengal" >Bengal</option>
+								<option value="Calico" >Calico</option>
+								<option value="Maine-Coon" >Maine Coon</option>	
+								<option value="Himalayan" >Himalayan</option>
+								<option value="Persian" >Persian</option>
+								<option value="Devon-Rex" >Devon Rex</option>
+							</select>	
+						</fieldset>
+					</div>
+				</div>
+			</div>
+
+			<!-- age -->
+			<div class="age">
+				<div class="wrapper">
+					<div class="ageWrap">
+						<h2>Age</h2>
+						<div class="flexContainer__Age">
+
+					 		<div class="flexChild__Age">
+					 			<label for="baby">Baby</label>
+					 			<input type="radio" name="age" value="baby">
+					 		</div>
+		
+					 		<div class="flexChild__Age">
+					 			<label for="young">Young</label>
+					 			<input type="radio" name="age" value="young">
+					 		</div>
+		
+					 		<div class="flexChild__Age">
+					 			<label for="adult">Adult</label>
+					 			<input type="radio" name="age" value="adult" checked="checked">
+					 		</div>
+		
+					 		<div class="flexChild__Age">
+					 			<label for="senior">Senior</label>
+					 			<input type="radio" name="age" value="senior">
+					 		</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		 	<!-- Submit button -->
+		 	<div class="findCatWrap">
+		 		<input type="submit" value="Find My Cat">
+		 	</div>
+		  </form>
+	
+			<div id="petGet">
+				<div class="wrapper">
+				<!-- dynamic content goes here -->
+				</div>
+			</div>
+	</main>
+	<footer>
+		<div class="footerFlex">
+			<p>copyright &copy 2017 AT Fresh Dev </p>
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet">
+			Tweet</a>
+		</div>
+	</footer>
+		
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="dev/scripts/script.js"></script>	
+	<script src="dev/scripts/icheck.min.js"></script>
+	<script src="dev/scripts/jquery.smooth-scroll.min.js"></script>
+	<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+</body>
+</html>

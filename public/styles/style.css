@@ -163,7 +163,7 @@ main {
   margin: 50px; }
 
 .backgroundHeading {
-  background-image: url("/../assets/cat_img1.jpg");
+  background-image: url("../assets/cat_img1.jpg");
   height: 100vh;
   background-size: cover;
   position: relative; }

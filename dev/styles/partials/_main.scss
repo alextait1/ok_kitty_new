@@ -7,7 +7,7 @@ main {
 }
 
 .backgroundHeading {
-	background-image: url('/../assets/cat_img1.jpg');
+	background-image: url('../assets/cat_img1.jpg');
 	height:100vh;
 	background-size: cover;
 	position: relative;
@@ -36,19 +36,14 @@ main {
 	font-family: $logoFont;
 }
 .logo2 {
-	margin:0;
-	padding:0;
-	font-family: $logoFont;
+  margin:0;
+  padding:0;
+  font-family: $logoFont;
   text-transform: lowercase;
   font-weight: 700;
   font-size:80px;
   font-style: italic;
   color:$yellow;
-	// text-shadow:
-  // -2px -2px 0 $orange,  
-  //   2px -2px 0 $orange,
-  //   -2px 2px 0 $orange,
-  //    2px 2px 0 $orange;
 	}
 
 button.mysteryCat,
