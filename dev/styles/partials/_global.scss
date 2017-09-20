@@ -26,3 +26,51 @@ label {
 }
 
 
+.logo {
+	margin:0;
+	padding:0;
+	text-shadow: 4px 4px 4px white;
+	font-family: $logoFont;
+  	text-transform: lowercase;
+  	font-weight: 700;
+  	font-size:150px;
+  	font-style: italic;
+  	color:lighten($cyanThree, 10%);
+	.logo__ok{
+		color:darken($cyanThree, 10%);
+		text-transform: uppercase;
+	}
+	@include respond-to(large){
+		font-size: 128px;
+	}
+	@include respond-to(medium){
+		font-size: 90px;
+	}
+	@include respond-to(small){
+		font-size: 75px;
+	}
+  }
+
+button, input[type="submit"]{
+	border:4px solid $yellow;
+	border-radius: 31px;
+	color:lighten($cyanThree, 10%);
+	padding: 20px 30px 20px 30px;
+	font-family: $baseFont;
+	background-color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: rgba(255,255,255,0.8);
+		&:hover {
+		background-color: $yellow;
+		transform: scale(1.05);
+		transition: all 0.3s;
+	}
+}
+
+
+	h2 {
+		@include heading(25px);
+	}
+
+

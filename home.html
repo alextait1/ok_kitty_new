@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>okkitty</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="dev/styles/styles.css">
+	<link rel="stylesheet" href="public/styles/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Vollkorn:700i" rel="stylesheet">
 	<link href="dev/styles/orange.css" rel="stylesheet">
 	<link type="image/png" href="assets/kitty_favicon.png" rel="icon">
@@ -18,7 +18,7 @@
 		</div>
 		<div class="wrapper">
 			<div class="heading" id="heading">
-				<p class="logo2"><span class="logo2__ok">ok</span>kitty</p>
+				<p class="logo"><span class="logo__ok">ok</span>kitty</p>
 				<a href="#form"><button class="mysteryCat">Mystery Dream Cat</button></a>
 			</div>
 		</div>	
@@ -26,36 +26,36 @@
 
 	<main>
 		<!-- form -->
-		<form id="form">
-
-		<!-- location -->
+		<p class="description">Welocome to <span class="yellow">OK KITTY</span>, the app that helps indecisive people find their <span class="yellow">ONE</span> true dream cat to adopt!</p>
+		<form id="form form_flex">
+			<!-- location -->
 			<div class="address">
 				<div class="wrapper">
 					<div class="addressField">
-						<label for=""><h2>Enter Your Postal Code/Zip(required)</h2></label>
+						<label for=""><h2>Enter Your Postal Code/Zip</h2></label>
 						<input type="text" class="location" name="location" required>
 					</div>
 				</div>
 			</div>
 
 			<!-- gender -->
-		<div class="gender">		
-			<div class="wrapper">
-			<div class="genderWrap">
-				<h2>Gender</h2>
-					<div id="gender" class="flexContainer">
-						<div class="flexChild">
-							<label for="male">Male</label>
-							<input type="radio" name="gender" value="M" checked="checked" class="iCheck">
-						</div>
-						<div class="flexChild">
-							<label for="female">Female</label>
-							<input type="radio" name="gender" value="F" class="iCheck">
+			<div class="gender">		
+				<div class="wrapper">
+					<div class="genderWrap">
+						<h2>Gender</h2>
+						<div id="gender" class="flexContainer">
+							<div class="flexChild">
+								<label for="male">Male</label>
+								<input type="radio" name="gender" value="M" checked="checked" class="iCheck">
+							</div>
+							<div class="flexChild">
+								<label for="female">Female</label>
+								<input type="radio" name="gender" value="F" class="iCheck">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
 			<!-- breed -->
 			<div class="breed">
@@ -90,23 +90,32 @@
 						<div class="flexContainer__Age">
 
 					 		<div class="flexChild__Age">
-					 			<label for="baby">Baby</label>
-					 			<input type="radio" name="age" value="baby">
+					 			<label for="baby"><input type="radio" name="age" value="baby">
+					 				Baby
+					 			</label>
+					 			
 					 		</div>
 		
 					 		<div class="flexChild__Age">
-					 			<label for="young">Young</label>
-					 			<input type="radio" name="age" value="young">
+					 			<label for="young"><input type="radio" name="age" value="young">
+					 				Young
+					 			</label>
+					 			
 					 		</div>
 		
 					 		<div class="flexChild__Age">
-					 			<label for="adult">Adult</label>
-					 			<input type="radio" name="age" value="adult" checked="checked">
+					 			<label for="adult">
+					 				<input type="radio" name="age" value="adult" checked="checked">
+					 				Adult
+					 			</label>
+					 			
 					 		</div>
 		
 					 		<div class="flexChild__Age">
-					 			<label for="senior">Senior</label>
-					 			<input type="radio" name="age" value="senior">
+					 			<label for="senior"><input type="radio" name="age" value="senior">
+					 				Senior
+					 			</label>
+					 			
 					 		</div>
 						</div>
 					</div>

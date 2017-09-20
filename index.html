@@ -3,23 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ok Kitty</title>
-	<link rel="stylesheet" href="dev/styles/styles.css">
+	<link rel="stylesheet" href="public/styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700i" rel="stylesheet">
 	<link type="image/png" href="assets/kitty_favicon.png" rel="icon">
 </head>
 <body>
 
-		<div class="videoContainer">
-			<video poster="dev/assets/catPoster.png" id="videoBg" preload="auto" autoplay loop>
-				<source src="dev/assets/catVideo.mp4" type="video/mp4">
-				Video not supported
-			</video>	
-		</div>
-
-		<div class="landingHeading">
-			<p class="logo"><span class="logo__ok">ok</span>kitty</p>
-			<a href="home.html"><button class="find">Enter</button></a>	
+		<div class="landing">
+			<div class="videoContainer">
+				<video poster="dev/assets/catPoster.png" id="videoBg" preload="auto" autoplay loop>
+					<source src="dev/assets/catVideo.mp4" type="video/mp4">
+					Video not supported
+				</video>	
+			</div>
+			
+			<div class="landingHeading">
+				<p class="logo"><span class="logo__ok">ok</span>kitty</p>
+				<a href="home.html"><button class="find">Enter</button></a>	
+			</div>
 		</div>
 </body>
 </html>

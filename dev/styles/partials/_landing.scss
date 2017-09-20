@@ -6,7 +6,9 @@
 	top:0;
 	left:0;
 	position: absolute;
-	background-image: url(../../assets/catPoster.png);
+	background-image: url(./../assets/catPoster.png);
+	background-size: cover;
+	background-position-x: center;
 	video {
 		min-height:100%; 
 		min-width: 100%;
@@ -27,40 +29,13 @@
 	flex-direction: column;
 	align-items:center;
 	padding: 80px;
-}
-
-.logo {
-	margin:0;
-	padding:0;
-	font-family: $logoFont;
-  	text-transform: lowercase;
-  	font-weight: 700;
-  	font-size:130px;
-  	font-style: italic;
-  	color:$brownThree;
-	.logo__ok{
-		color:$brownFour;
+	background-color: rgba(255,255,255,0.3);
+	@include respond-to(medium){
+		padding: 36px;
+		border-radius:90px;
 	}
-  }
-
-
-
-
-button.find{
-	border:2px solid $yellow;
-	border-radius: 20px;
-	color:$orange;
-	padding: 10px 20px 10px 20px;
-	font-family: $baseFont;
-	background-color: white;
-}
-
-button.find:hover {
-	color:$blue;
-	transition: all 0.3s;
-	border: 3px solid $blue;
-}
-
-	h2 {
-		@include heading(25px);
+	@include respond-to(small){
+		padding:20px;
+		border-radius:73px;
 	}
+}

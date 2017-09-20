@@ -2,6 +2,9 @@
 	font-size: 40px;
 	font-family: $baseFont;
 	color: $blue;
+	@include respond-to(medium){
+		font-size: 28px;
+	}
 }
 
 
@@ -14,10 +17,13 @@
 	font-size: 20px;
 	font-family: $baseFont;
 	color: $blue;
+	@include respond-to(small){
+		font-size: 16px;
+	}
 }
 
 .petImage {
-	width: 70%;
+	max-width: 70%;
 }
 
 // .petImage
@@ -30,6 +36,10 @@
 	margin: 50px;
 	display: flex;
 	justify-content: space-between;
+	max-width: 100%;
+	@include respond-to(small){
+		margin:20px;
+	}
 }
 
 
