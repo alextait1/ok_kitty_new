@@ -33,7 +33,7 @@ petApp.getPets = function (userSelections) {
 		console.log(config);
 
 		$.ajax({
-				url: 'http://api.petfinder.com/pet.find',
+				url: 'https://api.petfinder.com/pet.find',
 				method: 'GET',
 				dataType: 'jsonp',
 				data: config
