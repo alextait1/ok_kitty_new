@@ -11,13 +11,6 @@ petApp.secret = 'aba221c15a6df60f348038b59514c230';
 // cat info variable
 
 
-$('.scroll').on('click', function () {
-		$('html, body').animate({
-				scrollTop: $($.attr(this, 'href')).offset().top - 10 }, 600);
-		return false;
-		console.log('yoooooo');
-});
-
 petApp.currentCatIndex = {};
 
 // First ajax call to get pet data object
@@ -128,6 +121,12 @@ petApp.init = function () {
 				// petApp.getShelter({
 
 				// })
+				$('.scroll').on('click', function () {
+						$('html, body').animate({
+								scrollTop: $($.attr(this, 'href')).offset().top - 10 }, 600);
+						return false;
+						console.log('yoooooo');
+				});
 		});
 };
 

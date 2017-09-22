@@ -300,10 +300,6 @@ input[type="text"] {
 .addressField {
   padding-right: 30px; }
 
-@media (max-width: 480px) {
-  .addressField input {
-    margin-left: 30px; } }
-
 #breed {
   border: none; }
   #breed select {

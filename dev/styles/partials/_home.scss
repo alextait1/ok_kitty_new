@@ -104,13 +104,10 @@ input[type="text"]{
 }
 .addressField {
 	padding-right: 30px;
+	
 }
 
-.addressField input{
-@include respond-to(small){
-		margin-left: 30px;
-	}
-}
+
 
 #breed {
 	border:none;
@@ -169,7 +166,7 @@ footer {
 		text-align: center;
 		margin:0;
 		padding: 3%;
-		color:$cyanFour;
+		color: $cyanFour;
 	}
 }
 
