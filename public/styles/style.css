@@ -143,16 +143,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     margin-left: 30px; }
 
 h2, h3 {
-  font-family: "Roboto", sans-serif;
-  color: #345995;
-  padding-left: 30px;
+  font-family: "Droid Serif", serif;
+  color: #1b536f;
   margin: 0; }
   @media (max-width: 768px) {
     h2, h3 {
       font-size: 15px; } }
 
 label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Droid Serif", serif;
   color: black; }
 
 .logo {
@@ -183,7 +182,7 @@ button, input[type="submit"] {
   border-radius: 31px;
   color: #257298;
   padding: 20px 30px 20px 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Droid Serif", serif;
   background-color: white;
   font-size: 18px;
   text-transform: uppercase;
@@ -193,8 +192,11 @@ button, input[type="submit"] {
     transform: scale(1.05);
     transition: all 0.3s; }
 
+input[type="submit"] {
+  padding: 15px 22px 15px 22px; }
+
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Droid Serif", serif;
   font-weight: 400;
   font-size: 25px; }
 
@@ -257,6 +259,18 @@ main {
   font-style: italic;
   color: #EAC435; }
 
+.description {
+  font-size: 20px;
+  color: #1b536f;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  font-family: "Droid Serif", serif; }
+  .description .yellow {
+    color: #EAC435;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Vollkorn", serif; }
+
 .addressField,
 .genderWrap,
 .breedWrap,
@@ -276,21 +290,12 @@ main {
       flex-direction: column;
       align-items: left; } }
 
-.description {
-  font-size: 20px;
-  color: #1b536f;
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 5%; }
-  .description .yellow {
-    color: #EAC435;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-family: "Vollkorn", serif; }
-
 .form_flex {
   display: flex;
   flex-direction: column; }
+
+.form_flex-child {
+  margin-bottom: 5%; }
 
 input[type="text"] {
   border: 2px solid #1b536f;
@@ -308,7 +313,7 @@ input[type="text"] {
     border: 1px solid #7d8e9e;
     border-radius: 5px;
     padding-top: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Droid Serif", serif;
     font-size: 16px;
     line-height: 24px; }
     #breed select :hover {
@@ -317,7 +322,7 @@ input[type="text"] {
 .flexContainer {
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding: 8px;
   width: 60%; }
   @media (max-width: 768px) {
     .flexContainer {
@@ -328,14 +333,17 @@ input[type="text"] {
   display: flex;
   flex-direction: column;
   align-items: left;
-  padding: 50px;
+  padding: 7px 5% 0 5%;
   display: flex; }
   @media (max-width: 768px) {
     .flexContainer__Age {
       flex-direction: column;
-      padding: 20px;
+      padding: 0 5% 0 5%;
       width: 80%;
       align-items: left; } }
+
+.flexChild__Age {
+  margin-bottom: 10px; }
 
 .findCatWrap {
   display: flex;
@@ -346,7 +354,7 @@ footer {
   background: #EAC435; }
   footer p {
     font-size: 20px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Droid Serif", serif;
     text-align: center;
     margin: 0;
     padding: 3%;
@@ -398,7 +406,7 @@ footer {
 
 .petName {
   font-size: 40px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Droid Serif", serif;
   color: #345995; }
   @media (max-width: 768px) {
     .petName {
@@ -411,7 +419,7 @@ footer {
 .petPhone,
 .petEmail {
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Droid Serif", serif;
   color: #345995; }
   @media (max-width: 480px) {
     .petAge,
@@ -426,7 +434,7 @@ footer {
   max-width: 70%; }
 
 .petGet {
-  font-family: "Roboto", sans-serif;
+  font-family: "Droid Serif", serif;
   border: 5px solid #345995;
   padding: 50px;
   border-radius: 10px;

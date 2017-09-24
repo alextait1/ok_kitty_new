@@ -63,12 +63,25 @@ main {
 	}
 
 
+.description{
+	font-size: 20px;
+	color: $cyanThree;
+	margin:0 auto;
+	padding-bottom: 5%;
+	font-family: $baseFont;
+	.yellow{
+		color:$yellow;
+		font-size: 24px;
+		text-transform: uppercase;
+		font-family: $logoFont;
+	}
+}
+
 .addressField,
 .genderWrap,
 .breedWrap,
 .ageWrap {
 	display: flex;
-	// align-items:center;
 	@include respond-to(medium){
 		padding-top: 30px;
 	}
@@ -78,23 +91,13 @@ main {
 	}
 }
 
-.description{
-	font-size: 20px;
-	color: $cyanThree;
-	text-align: center;
-	margin:0 auto;
-	padding-bottom: 5%;
-	.yellow{
-		color:$yellow;
-		font-size: 24px;
-		text-transform: uppercase;
-		font-family: $logoFont;
-	}
-}
-
 .form_flex{
 	display: flex;
 	flex-direction:column;
+}
+
+.form_flex-child{
+	margin-bottom: 5%;
 }
 
 input[type="text"]{
@@ -129,7 +132,7 @@ input[type="text"]{
 .flexContainer {
 	display: flex;
 	align-items: center;
-	padding: 50px;
+	padding: 8px;
 	width:60%;
 	@include respond-to(medium){
 		width:80%;
@@ -141,15 +144,18 @@ input[type="text"]{
 	display: flex;
 	flex-direction:column;
 	align-items: left;
-	padding: 50px;
+	padding: 7px 5% 0 5%;
 	display: flex;
-	// width:60%;
 	@include respond-to(medium){
 		flex-direction:column;
-		padding: 20px;
+		padding: 0 5% 0 5%;
 		width: 80%;
 		align-items: left;
 	}
+}
+
+.flexChild__Age{
+	margin-bottom: 10px;
 }
 
 .findCatWrap {

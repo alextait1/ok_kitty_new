@@ -12,8 +12,7 @@
 
 h2, h3 {
 	font-family: $baseFont;
-	color:$blue;
-	padding-left: 30px;
+	color:$cyanThree;
 	margin:0;
 	@include respond-to(medium){
 		font-size: 15px;
@@ -69,9 +68,13 @@ button, input[type="submit"]{
 
 }
 
+input[type="submit"]{
+	padding: 15px 22px 15px 22px;
+}
 
-	h2 {
-		@include heading(25px);
-	}
+
+h2 {
+	@include heading(25px);
+}
 
 
