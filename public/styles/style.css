@@ -298,24 +298,30 @@ main {
   margin-bottom: 5%; }
 
 input[type="text"] {
-  border: 2px solid #1b536f;
+  border: 1px solid rgba(242, 244, 245, 0.6);
+  border-bottom: 2px solid #1b536f;
+  background-color: rgba(213, 218, 223, 0.6);
   border-radius: 3px;
   font-size: 20px; }
 
 .addressField {
-  padding-right: 30px; }
+  display: flex;
+  justify-content: space-between; }
 
 #breed {
-  border: none; }
+  border: none;
+  margin-top: -5px; }
   #breed select {
     width: 150px;
     height: 30px;
-    border: 1px solid #7d8e9e;
+    border: none;
     border-radius: 5px;
     padding-top: 10px;
     font-family: "Droid Serif", serif;
     font-size: 16px;
-    line-height: 24px; }
+    line-height: 24px;
+    background-color: rgba(213, 218, 223, 0.6);
+    color: #1b536f; }
     #breed select :hover {
       background-color: rgba(125, 142, 158, 0.6); }
 
@@ -328,6 +334,9 @@ input[type="text"] {
     .flexContainer {
       width: 80%;
       padding: 20px; } }
+
+.flexChild__gender {
+  margin-right: 20px; }
 
 .flexContainer__Age {
   display: flex;

@@ -26,7 +26,7 @@
 
 	<main>
 		<!-- form -->
-		<p class="description" id="form">Welocome to <span class="yellow">OK KITTY</span>, the app that helps indecisive people find their <span class="yellow">ONE</span> true dream cat to adopt! Fill out the form and we'll find you your true kitty cat love.</p>
+		<p class="description" id="form">Welocome to <span class="yellow">OK kitty</span>, the app that helps indecisive people find their <span class="yellow">ONE</span> true dream cat to adopt! Fill out the form and we'll find your true kitty cat love.</p>
 		<form id="form form_flex">
 			<!-- location -->
 			<div class="address form_flex-child">
@@ -44,13 +44,16 @@
 					<div class="genderWrap">
 						<h2>Gender</h2>
 						<div id="gender" class="flexContainer">
-							<div class="flexChild">
-								<label for="male">Male</label>
-								<input type="radio" name="gender" value="M" checked="checked" class="iCheck">
+							<div class="flexChild flexChild__gender">
+								<label for="male">
+									<input type="radio" name="gender" value="M" checked="checked" class="iCheck">Male
+								</label>
+								
 							</div>
-							<div class="flexChild">
-								<label for="female">Female</label>
-								<input type="radio" name="gender" value="F" class="iCheck">
+							<div class="flexChild flexChild__gender">
+								<label for="female">
+									<input type="radio" name="gender" value="F" class="iCheck">Female
+								</label>
 							</div>
 						</div>
 					</div>
@@ -136,8 +139,7 @@
 	<footer id="footer">
 		<div class="footerFlex">
 			<p>copyright &copy 2017 AT Fresh Dev </p>
-			<a class="twitter-share-button" href="https://twitter.com/intent/tweet">
-			Tweet</a>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Ok Kitty, the dating app for cats!" data-url="https://alextait1.github.io/ok_kitty_new/home.html" data-via="AT_Fresh_Dev" data-hashtags="adpotacat, petfinder, catsneedlovetoo" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 	</footer>
 		
@@ -146,22 +148,6 @@
 	<script src="dev/scripts/script.js"></script>	
 	<script src="dev/scripts/icheck.min.js"></script>
 	<script src="dev/scripts/jquery.smooth-scroll.min.js"></script>
-	<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs"));</script>
 
 </body>
 </html>

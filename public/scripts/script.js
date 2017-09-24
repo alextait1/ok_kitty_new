@@ -15,13 +15,9 @@ petApp.currentCatIndex = {};
 
 // First ajax call to get pet data object
 petApp.getPets = function (userSelections) {
-		// user selections dynamic from inputs
-		console.log(userSelections);
-		// 
-		// let location = $('input.location[type="text"]').val();
-		// 		console.log(location);
 
-		// variable with required parameters
+		console.log(userSelections);
+
 		var config = {
 				key: petApp.key,
 				output: 'full',
@@ -38,17 +34,14 @@ petApp.getPets = function (userSelections) {
 				method: 'GET',
 				dataType: 'jsonp',
 				data: config
-				// build a .then method to do something with the data	
 		}).then(function (res) {
 				console.log('res', res);
-				// access the object for a pet
 				var petData = res.petfinder.pets.pet;
 				console.log('pet Data', petData);
 
 				petApp.currentCatIndex = Math.floor(Math.random(petData) * petData.length);
 				console.log('current cat index', petApp.currentCatIndex);
 
-				// calling the display function declared below
 				petApp.displayPet(petData[petApp.currentCatIndex]);
 		});
 };
@@ -91,14 +84,10 @@ petApp.displayPet = function (petData) {
 		}
 };
 
-// Init
 petApp.init = function () {
-		// kick off content goes here
 
 		$('form').on('submit', function (event) {
 				event.preventDefault();
-
-				// make 3 variables to select values using .val() method
 
 				var breed = $('select[name=breed]').val();
 
@@ -107,10 +96,7 @@ petApp.init = function () {
 				var age = $('input[name=age]:checked').val();
 
 				var location = $('input.location[type="text"]').val();
-				// console.log(location);
 
-
-				//call the petApp.getPets function to pass this object in as an argument (fills in parameter of userSelections in ajax request) 
 				petApp.getPets({
 						breed: breed,
 						sex: gender,
@@ -118,12 +104,9 @@ petApp.init = function () {
 						location: location
 				});
 
-				// petApp.getShelter({
-
-				// })
 				$('.scroll').on('click', function () {
 						$('html, body').animate({
-								scrollTop: $($.attr(this, 'href')).offset().top - 10 }, 600);
+								scrollTop: $($.attr(this, 'href')).offset().top }, 600);
 						return false;
 						console.log('yoooooo');
 				});

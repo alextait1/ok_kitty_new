@@ -101,28 +101,32 @@ main {
 }
 
 input[type="text"]{
-	border:2px solid $cyanThree;
+	border:1px solid lighten($grey2,40%);
+	border-bottom:2px solid $cyanThree;
+	background-color:lighten($grey2,30%);
 	border-radius:3px;
 	font-size: 20px;
 }
+
 .addressField {
-	padding-right: 30px;
-	
+	display: flex;
+	justify-content: space-between;
 }
-
-
 
 #breed {
 	border:none;
+	margin-top: -5px;
 	select {
 		width: 150px;
 		height: 30px;
-		border: 1px solid $grey;
+		border: none;
 		border-radius: 5px;
 		padding-top: 10px;
 		font-family: $baseFont;
 		font-size: 16px;
 		line-height: 24px;
+		background-color:lighten($grey2,30%);
+		color:$cyanThree;
 		& :hover {
 			background-color: $grey2;
 		}
@@ -138,6 +142,10 @@ input[type="text"]{
 		width:80%;
 		padding: 20px;
 	}
+}
+
+.flexChild__gender{
+	margin-right:20px;
 }
 
 .flexContainer__Age {
