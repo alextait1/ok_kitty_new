@@ -205,7 +205,7 @@ body {
 
 main {
   border: 10px solid #EAC435;
-  padding: 5%;
+  padding: 5% 10% 5% 10%;
   border-radius: 20px;
   margin: 50px;
   max-width: 70%;
@@ -298,11 +298,11 @@ main {
   margin-bottom: 5%; }
 
 input[type="text"] {
-  border: 1px solid rgba(242, 244, 245, 0.6);
+  border: 1px solid rgba(242, 244, 245, 0.5);
   border-bottom: 2px solid #1b536f;
-  background-color: rgba(213, 218, 223, 0.6);
+  background-color: rgba(213, 218, 223, 0.5);
   border-radius: 3px;
-  font-size: 20px; }
+  width: 40%; }
 
 .addressField {
   display: flex;
@@ -320,10 +320,10 @@ input[type="text"] {
     font-family: "Droid Serif", serif;
     font-size: 16px;
     line-height: 24px;
-    background-color: rgba(213, 218, 223, 0.6);
+    background-color: rgba(213, 218, 223, 0.5);
     color: #1b536f; }
     #breed select :hover {
-      background-color: rgba(125, 142, 158, 0.6); }
+      background-color: rgba(125, 142, 158, 0.5); }
 
 .flexContainer {
   display: flex;
@@ -440,16 +440,24 @@ footer {
       font-size: 16px; } }
 
 .petImage {
-  max-width: 70%; }
+  max-width: 100%; }
+  .petImage img {
+    border-top: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 50px solid white;
+    border-left: 10px solid white;
+    box-shadow: 10px 10px 10px rgba(125, 142, 158, 0.5); }
 
 .petGet {
+  background-color: rgba(125, 142, 158, 0.5);
   font-family: "Droid Serif", serif;
   border: 5px solid #345995;
   padding: 50px;
   border-radius: 10px;
   margin: 50px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   max-width: 100%; }
   @media (max-width: 480px) {
     .petGet {

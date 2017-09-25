@@ -7,6 +7,10 @@
 	}
 }
 
+// #userPet{
+// 	display: flex;
+// 	flex-wrap: wrap;
+// }
 
 .petAge,
 .petId,
@@ -23,19 +27,28 @@
 }
 
 .petImage {
-	max-width: 70%;
+	max-width: 100%;
+	img{
+		border-top: 10px solid white;
+		border-right: 10px solid white;
+		border-bottom: 50px solid white;
+		border-left: 10px solid white;
+		box-shadow: 10px 10px 10px $grey2;
+	}
 }
 
 // .petImage
 
 .petGet {
+	background-color: $grey2;
 	font-family: $baseFont;
 	border: 5px solid $blue;
 	padding: 50px;
 	border-radius: 10px;
 	margin: 50px;
 	display: flex;
-	justify-content: space-between;
+	flex-direction:column;
+	align-items:center;
 	max-width: 100%;
 	@include respond-to(small){
 		margin:20px;

@@ -3,7 +3,7 @@ body{
 }
 main {
 	border: 10px solid $yellow;
-	padding:5%;
+	padding:5% 10% 5% 10%;
 	border-radius: 20px;
 	margin: 50px;
 	max-width: 70%;
@@ -62,7 +62,6 @@ main {
   color:$yellow;
 	}
 
-
 .description{
 	font-size: 20px;
 	color: $cyanThree;
@@ -105,7 +104,7 @@ input[type="text"]{
 	border-bottom:2px solid $cyanThree;
 	background-color:lighten($grey2,30%);
 	border-radius:3px;
-	font-size: 20px;
+	width:40%;
 }
 
 .addressField {
